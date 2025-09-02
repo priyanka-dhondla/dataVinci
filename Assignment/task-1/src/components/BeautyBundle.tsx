@@ -23,7 +23,7 @@ const BeautyBundle = () => {
         <div className="flex-shrink-0">
           <div className="w-20 h-24 bg-gray-100 rounded-lg overflow-hidden">
             <img
-              src="assets/logos/b1.png"
+              src="src/assets/logos/b1.png"
               alt="UMF 20+"
               className="w-full h-full object-contain"
             />
@@ -41,7 +41,7 @@ const BeautyBundle = () => {
         <div className="flex-shrink-0">
           <div className="w-20 h-24 bg-gray-100 rounded-lg overflow-hidden">
             <img
-              src="assets/logos/b2.png"
+              src="src/assets/logos/b2.png"
               alt="UMF 24+"
               className="w-full h-full object-contain"
             />
@@ -59,7 +59,7 @@ const BeautyBundle = () => {
         <div className="flex-shrink-0">
           <div className="w-20 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
             <img
-              src="assets//logos/b3.png"
+              src="src/assets//logos/b3.png"
               alt="UMF 24+"
               className="w-full h-full object-contain"
             />{" "}
