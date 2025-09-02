@@ -74,7 +74,7 @@ const ProductDetails = () => {
           <button className="aspect-square rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all">
             <div className="p-2">
               <img
-                src="src/assets/logos/c5.png"
+                src="/logos/c5.png"
                 alt="250g jar"
                 className="w-full h-full object-contain"
               />
@@ -83,7 +83,7 @@ const ProductDetails = () => {
           <button className="aspect-square rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all">
             <div className="p-2">
               <img
-                src="src/assets/logos/c6.png"
+                src="/logos/c6.png"
                 alt="500g jar"
                 className="w-full h-full object-contain"
               />
@@ -92,7 +92,7 @@ const ProductDetails = () => {
           <button className="aspect-square rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all">
             <div className="p-2 flex items-center justify-center">
               <img
-                src="src/assets/logos/c7.png"
+                src="/logos/c7.png"
                 alt="500g jar"
                 className="w-full h-full object-contain"
               />{" "}
