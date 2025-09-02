@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nested Checkbox</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .category {
+        margin-top: 10px;
+      }
+      .items {
+        margin-left: 20px;
+      }
+      label {
+        display: block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Nested Checkbox</h2>
+
+    <!-- Select All -->
+    <label>
+      <input type="checkbox" id="selectAll" />
+      Select All
+    </label>
+
+    <!-- Fruits -->
+    <div class="category">
+      <label>
+        <input
+          type="checkbox"
+          class="category-checkbox"
+          data-category="fruits"
+        />
+        Fruits
+      </label>
+      <div class="items">
+        <label><input type="checkbox" class="fruit" /> Apple</label>
+        <label><input type="checkbox" class="fruit" /> Banana</label>
+        <label><input type="checkbox" class="fruit" /> Orange</label>
+      </div>
+    </div>
+
+    <!-- Vegetables -->
+    <div class="category">
+      <label>
+        <input
+          type="checkbox"
+          class="category-checkbox"
+          data-category="vegetables"
+        />
+        Vegetables
+      </label>
+      <div class="items">
+        <label><input type="checkbox" class="vegetable" /> Carrot</label>
+        <label><input type="checkbox" class="vegetable" /> Broccoli</label>
+        <label><input type="checkbox" class="vegetable" /> Potato</label>
+      </div>
+    </div>
+
+    <script>
+      const selectAll = document.getElementById("selectAll");
+      const categoryCheckboxes =
+        document.querySelectorAll(".category-checkbox");
+      const fruits = document.querySelectorAll(".fruit");
+      const vegetables = document.querySelectorAll(".vegetable");
+
+      selectAll.addEventListener("change", (e) => {
+        const checked = e.target.checked;
+        categoryCheckboxes.forEach((cb) => {
+          cb.checked = checked;
+          cb.indeterminate = false;
+        });
+        [...fruits, ...vegetables].forEach((cb) => (cb.checked = checked));
+      });
+
+      categoryCheckboxes.forEach((cb) => {
+        cb.addEventListener("change", (e) => {
+          const category = e.target.dataset.category;
+          const items = category === "fruits" ? fruits : vegetables;
+
+          // Propagate state downward
+          items.forEach((item) => (item.checked = e.target.checked));
+
+          e.target.indeterminate = false;
+
+          updateSelectAll();
+        });
+      });
+
+      [...fruits, ...vegetables].forEach((cb) => {
+        cb.addEventListener("change", () => {
+          updateCategory("fruits", fruits);
+          updateCategory("vegetables", vegetables);
+          updateSelectAll();
+        });
+      });
+
+      function updateCategory(category, items) {
+        const categoryBox = document.querySelector(
+          `.category-checkbox[data-category="${category}"]`
+        );
+        const allChecked = [...items].every((i) => i.checked);
+        const noneChecked = [...items].every((i) => !i.checked);
+
+        if (allChecked) {
+          categoryBox.checked = true;
+          categoryBox.indeterminate = false;
+        } else if (noneChecked) {
+          categoryBox.checked = false;
+          categoryBox.indeterminate = false;
+        } else {
+          categoryBox.checked = false;
+          categoryBox.indeterminate = true;
+        }
+      }
+
+      function updateSelectAll() {
+        const allChildren = [...fruits, ...vegetables];
+        const allChecked = allChildren.every((i) => i.checked);
+        const noneChecked = allChildren.every((i) => !i.checked);
+
+        if (allChecked) {
+          selectAll.checked = true;
+          selectAll.indeterminate = false;
+        } else if (noneChecked) {
+          selectAll.checked = false;
+          selectAll.indeterminate = false;
+        } else {
+          selectAll.checked = false;
+          selectAll.indeterminate = true;
+        }
+      }
+    </script>
+  </body>
+</html>
