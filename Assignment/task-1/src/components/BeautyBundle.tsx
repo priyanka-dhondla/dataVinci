@@ -59,7 +59,7 @@ const BeautyBundle = () => {
         <div className="flex-shrink-0">
           <div className="w-20 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
             <img
-              src="//logos/b3.png"
+              src="/logos/b3.png"
               alt="UMF 24+"
               className="w-full h-full object-contain"
             />{" "}

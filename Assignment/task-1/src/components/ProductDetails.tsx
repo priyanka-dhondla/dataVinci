@@ -15,22 +15,22 @@ const ProductDetails = () => {
     {
       size: "125g",
       weight: "4.4oz",
-      imgUrl: "assets/logos/c1.png",
+      imgUrl: "/logos/c1.png",
     },
     {
       size: "250g",
       weight: "8.8oz",
-      imgUrl: "assets/logos/c2.png",
+      imgUrl: "/logos/c2.png",
     },
     {
       size: "500g",
       weight: "17.6oz",
-      imgUrl: "assets/logos/c3.png",
+      imgUrl: "/logos/c3.png",
     },
     {
       size: "1kg",
       weight: "35.2oz",
-      imgUrl: "assets/logos/c4.png",
+      imgUrl: "/logos/c4.png",
     },
   ];
 
