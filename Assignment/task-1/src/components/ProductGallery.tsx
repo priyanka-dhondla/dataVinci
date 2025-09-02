@@ -8,7 +8,7 @@ const ProductGallery = () => {
         {/* Top Left */}
         <div className="bg-gray-100 rounded-2xl aspect-square overflow-hidden">
           <img
-            src="src/assets/logos/l1.png"
+            src="assets/logos/l1.png"
             alt="Product lifestyle 1"
             className="w-full h-full object-cover"
           />
@@ -17,7 +17,7 @@ const ProductGallery = () => {
         {/* Top Right */}
         <div className="bg-purple-200 rounded-2xl aspect-square overflow-hidden">
           <img
-            src="src/assets/logos/l2.png"
+            src="assets/logos/l2.png"
             alt="Product lifestyle 2"
             className="w-full h-full object-cover"
           />
@@ -26,7 +26,7 @@ const ProductGallery = () => {
         {/* Bottom Left */}
         <div className="bg-gray-100 rounded-2xl aspect-square overflow-hidden">
           <img
-            src="src/assets/logos/l3.png"
+            src="assets/logos/l3.png"
             alt="Product lifestyle 3"
             className="w-full h-full object-cover"
           />
@@ -35,7 +35,7 @@ const ProductGallery = () => {
         {/* Bottom Right */}
         <div className="bg-gray-100 rounded-2xl aspect-square overflow-hidden">
           <img
-            src="src/assets/logos/l4.png"
+            src="assets/logos/l4.png"
             alt="Product lifestyle 4"
             className="w-full h-full object-cover"
           />
@@ -47,7 +47,7 @@ const ProductGallery = () => {
         {/* Bottom Left */}
         <div className="bg-gray-100 rounded-2xl aspect-square overflow-hidden">
           <img
-            src="src/assets/logos/l5.png"
+            src="assets/logos/l5.png"
             alt="Product lifestyle 5"
             className="w-full h-full object-cover"
           />
@@ -56,7 +56,7 @@ const ProductGallery = () => {
         {/* Bottom Right with Text Overlay */}
         <div className="bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl aspect-square overflow-hidden relative">
           <img
-            src="src/assets/logos/l6.png"
+            src="assets/logos/l6.png"
             alt="Natural Raw honey"
             className="w-full h-full object-cover"
           />

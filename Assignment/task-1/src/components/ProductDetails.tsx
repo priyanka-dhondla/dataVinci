@@ -15,22 +15,22 @@ const ProductDetails = () => {
     {
       size: "125g",
       weight: "4.4oz",
-      imgUrl: "src/assets/logos/c1.png",
+      imgUrl: "assets/logos/c1.png",
     },
     {
       size: "250g",
       weight: "8.8oz",
-      imgUrl: "src/assets/logos/c2.png",
+      imgUrl: "assets/logos/c2.png",
     },
     {
       size: "500g",
       weight: "17.6oz",
-      imgUrl: "src/assets/logos/c3.png",
+      imgUrl: "assets/logos/c3.png",
     },
     {
       size: "1kg",
       weight: "35.2oz",
-      imgUrl: "src/assets/logos/c4.png",
+      imgUrl: "assets/logos/c4.png",
     },
   ];
 
@@ -74,7 +74,7 @@ const ProductDetails = () => {
           <button className="aspect-square rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all">
             <div className="p-2">
               <img
-                src="src/assets/logos/c5.png"
+                src="assets/logos/c5.png"
                 alt="250g jar"
                 className="w-full h-full object-contain"
               />
@@ -83,7 +83,7 @@ const ProductDetails = () => {
           <button className="aspect-square rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all">
             <div className="p-2">
               <img
-                src="src/assets/logos/c6.png"
+                src="assets/logos/c6.png"
                 alt="500g jar"
                 className="w-full h-full object-contain"
               />
@@ -92,7 +92,7 @@ const ProductDetails = () => {
           <button className="aspect-square rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all">
             <div className="p-2 flex items-center justify-center">
               <img
-                src="src/assets/logos/c7.png"
+                src="assets/logos/c7.png"
                 alt="500g jar"
                 className="w-full h-full object-contain"
               />{" "}

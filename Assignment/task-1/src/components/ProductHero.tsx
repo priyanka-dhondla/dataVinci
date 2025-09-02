@@ -22,7 +22,7 @@ const ProductHero = () => {
             {/* Product Image */}
             <div className="relative z-10 p-8">
               <img
-                src="src/assets/logos/home.png"
+                src="assets/logos/home.png"
                 alt="Manuka Honey UMF 24+ MGO 1122+"
                 className="max-w-full max-h-full object-contain"
               />
